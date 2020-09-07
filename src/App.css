@@ -1,38 +1,73 @@
-.App {
+body {
+  background-color: #f4f4f4 !important;
+}
+
+.MuiListItem-root.Mui-selected,
+.MuiListItem-root.Mui-selected:hover {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.MuiListItem-root.Mui-selected {
+  background-color: #fff !important;
+}
+
+.card-height {
+  height: 350px;
+  overflow: auto;
+}
+
+.table td,
+.table th {
+  border-top: none !important;
+}
+
+.Popup {
+  height: 200px;
+  width: 130px;
+}
+.country__flag img {
+  width: 100%;
+  height: 100px;
+}
+
+.country__name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.country__cases {
+  padding: 3px;
+}
+.country__recovered {
+  padding: 3px;
+}
+.country__deaths {
+  padding: 3px;
+}
+
+.hover__effect {
+  cursor: pointer;
+}
+
+.linegraph {
+  margin-top: 20px;
+}
+.linegraph h5 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cases {
+  border-top: 5px solid #cc1034;
+  border-radius: 3px;
+}
+.recovered {
+  border-top: 5px solid #7dd71d;
+  border-radius: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deaths {
+  border-top: 5px solid #fb4443;
+  border-radius: 3px;
 }
